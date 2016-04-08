@@ -29,7 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome));
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Books = new System.Windows.Forms.Button();
+            this.btn_NewBooks = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("SimHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(849, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 50);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "用户登录";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btn_Login_Click);
+            // 
+            // btn_Books
+            // 
+            this.btn_Books.Font = new System.Drawing.Font("SimHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Books.Location = new System.Drawing.Point(849, 80);
+            this.btn_Books.Name = "btn_Books";
+            this.btn_Books.Size = new System.Drawing.Size(103, 48);
+            this.btn_Books.TabIndex = 1;
+            this.btn_Books.Text = "图书查询";
+            this.btn_Books.UseVisualStyleBackColor = true;
+            this.btn_Books.Click += new System.EventHandler(this.btn_Books_Click);
+            // 
+            // btn_NewBooks
+            // 
+            this.btn_NewBooks.Font = new System.Drawing.Font("SimHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NewBooks.Location = new System.Drawing.Point(849, 146);
+            this.btn_NewBooks.Name = "btn_NewBooks";
+            this.btn_NewBooks.Size = new System.Drawing.Size(103, 50);
+            this.btn_NewBooks.TabIndex = 2;
+            this.btn_NewBooks.Text = "新书推荐";
+            this.btn_NewBooks.UseVisualStyleBackColor = true;
             // 
             // Welcome
             // 
@@ -38,6 +73,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(984, 579);
+            this.Controls.Add(this.btn_NewBooks);
+            this.Controls.Add(this.btn_Books);
+            this.Controls.Add(this.button1);
             this.MaximumSize = new System.Drawing.Size(1000, 618);
             this.MinimumSize = new System.Drawing.Size(1000, 618);
             this.Name = "Welcome";
@@ -48,6 +86,10 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Books;
+        private System.Windows.Forms.Button btn_NewBooks;
     }
 }
 

@@ -21,5 +21,17 @@ namespace LibraryClient
         {
 
         }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            Login newLogin = new Login();
+            newLogin.Show();
+        }
+
+        private void btn_Books_Click(object sender, EventArgs e)
+        {
+            Books newBooks = new Books();
+            newBooks.Show();
+        }
     }
 }
