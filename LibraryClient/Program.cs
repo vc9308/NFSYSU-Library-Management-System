@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibraryDAL;
+using System.Configuration;
 
 namespace LibraryClient
 {
@@ -14,9 +16,12 @@ namespace LibraryClient
         [STAThread]
         static void Main()
         {
+            string strCn = ConfigurationManager.AppSettings["connectionString"];
+            Connection cn = new Connection(strCn);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Welcome());
         }
     }
 }
