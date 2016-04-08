@@ -1,6 +1,6 @@
 ﻿namespace LibraryClient
 {
-    partial class Form1
+    partial class Welcome
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome));
+            this.SuspendLayout();
+            // 
+            // Welcome
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(984, 579);
+            this.MaximumSize = new System.Drawing.Size(1000, 618);
+            this.MinimumSize = new System.Drawing.Size(1000, 618);
+            this.Name = "Welcome";
+            this.Text = "欢迎进入图书馆系统";
+            this.Load += new System.EventHandler(this.Welcome_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
