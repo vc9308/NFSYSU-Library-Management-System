@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome));
-            this.button1 = new System.Windows.Forms.Button();
+            this.bun_Login = new System.Windows.Forms.Button();
             this.btn_Books = new System.Windows.Forms.Button();
             this.btn_NewBooks = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // bun_Login
             // 
-            this.button1.Font = new System.Drawing.Font("SimHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(849, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "用户登录";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btn_Login_Click);
+            this.bun_Login.Font = new System.Drawing.Font("SimHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bun_Login.Location = new System.Drawing.Point(849, 12);
+            this.bun_Login.Name = "bun_Login";
+            this.bun_Login.Size = new System.Drawing.Size(103, 50);
+            this.bun_Login.TabIndex = 0;
+            this.bun_Login.Text = "用户登录";
+            this.bun_Login.UseVisualStyleBackColor = true;
+            this.bun_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // btn_Books
             // 
@@ -75,10 +75,11 @@
             this.ClientSize = new System.Drawing.Size(984, 579);
             this.Controls.Add(this.btn_NewBooks);
             this.Controls.Add(this.btn_Books);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bun_Login);
             this.MaximumSize = new System.Drawing.Size(1000, 618);
             this.MinimumSize = new System.Drawing.Size(1000, 618);
             this.Name = "Welcome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "欢迎进入图书馆系统";
             this.Load += new System.EventHandler(this.Welcome_Load);
             this.ResumeLayout(false);
@@ -87,7 +88,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bun_Login;
         private System.Windows.Forms.Button btn_Books;
         private System.Windows.Forms.Button btn_NewBooks;
     }

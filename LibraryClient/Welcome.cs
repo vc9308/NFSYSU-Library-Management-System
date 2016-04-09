@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibraryDAL;
 
 namespace LibraryClient
 {
@@ -32,6 +33,11 @@ namespace LibraryClient
         {
             Books newBooks = new Books();
             newBooks.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Admin2User a2u = new Admin2User("1111111");
         }
     }
 }
