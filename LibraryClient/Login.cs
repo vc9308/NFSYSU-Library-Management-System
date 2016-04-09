@@ -50,7 +50,7 @@ namespace LibraryClient
                     login.Login4Admin(id, psw, ref access);
                     if (access)
                     {
-                        Management newForm = new Management();
+                        ManageChoice newForm = new ManageChoice();
                         newForm.Show();
                         this.Close();
                     }

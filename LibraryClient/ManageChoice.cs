@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace LibraryClient
 {
-    public partial class Management : Form
+    public partial class ManageChoice : Form
     {
-        public Management()
+        public ManageChoice()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UsersManagement newForm = new UsersManagement();
+            newForm.Show();
         }
     }
 }

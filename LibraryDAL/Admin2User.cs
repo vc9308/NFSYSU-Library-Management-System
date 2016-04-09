@@ -59,6 +59,7 @@ namespace LibraryDAL
                 cmdInsert.ExecuteNonQuery();
 
                 tx.Commit();
+                MessageBox.Show("已升级为管理员账户");
             }
             catch (Exception ex)
             {
