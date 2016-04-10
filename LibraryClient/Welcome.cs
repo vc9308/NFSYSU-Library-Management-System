@@ -25,19 +25,20 @@ namespace LibraryClient
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            Login newLogin = new Login();
-            newLogin.Show();
+            Login newForm = new Login();
+            newForm.Show();
         }
 
         private void btn_Books_Click(object sender, EventArgs e)
         {
-            Books newBooks = new Books();
-            newBooks.Show();
+            Books newForm = new Books();
+            newForm.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_NewBooks_Click(object sender, EventArgs e)
         {
-            Admin2User a2u = new Admin2User("1111111");
+            NewBooks newForm = new NewBooks();
+            newForm.Show();
         }
     }
 }

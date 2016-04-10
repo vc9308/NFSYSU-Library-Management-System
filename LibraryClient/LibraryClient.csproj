@@ -71,11 +71,6 @@
     <Compile Include="Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
     </Compile>
-    <Compile Include="LibraryManagerDataSet_Books.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibraryManagerDataSet_Books.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,17 +139,6 @@
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="LibraryManagerDataSet_Books.xsc">
-      <DependentUpon>LibraryManagerDataSet_Books.xsd</DependentUpon>
-    </None>
-    <None Include="LibraryManagerDataSet_Books.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LibraryManagerDataSet_Books.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LibraryManagerDataSet_Books.xss">
-      <DependentUpon>LibraryManagerDataSet_Books.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

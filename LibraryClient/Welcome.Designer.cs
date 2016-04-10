@@ -65,6 +65,7 @@
             this.btn_NewBooks.TabIndex = 2;
             this.btn_NewBooks.Text = "新书推荐";
             this.btn_NewBooks.UseVisualStyleBackColor = true;
+            this.btn_NewBooks.Click += new System.EventHandler(this.btn_NewBooks_Click);
             // 
             // Welcome
             // 

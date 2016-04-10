@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibraryDAL;
 
 namespace LibraryClient
 {
@@ -17,14 +18,20 @@ namespace LibraryClient
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_A2U_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void UsersManagement_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_DelUser_Click(object sender, EventArgs e)
+        {
+            string id = textBox_DelId.Text;
+            UsersDAL.Del(id);
         }
     }
 }
