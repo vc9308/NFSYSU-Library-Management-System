@@ -71,6 +71,16 @@
     <Compile Include="Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
     </Compile>
+    <Compile Include="LibraryManagerDataSet_Admins2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagerDataSet_Admins2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryManagerDataSet_Users1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagerDataSet_Users1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +149,28 @@
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="LibraryManagerDataSet_Admins2.xsc">
+      <DependentUpon>LibraryManagerDataSet_Admins2.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryManagerDataSet_Admins2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryManagerDataSet_Admins2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryManagerDataSet_Admins2.xss">
+      <DependentUpon>LibraryManagerDataSet_Admins2.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryManagerDataSet_Users1.xsc">
+      <DependentUpon>LibraryManagerDataSet_Users1.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryManagerDataSet_Users1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryManagerDataSet_Users1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryManagerDataSet_Users1.xss">
+      <DependentUpon>LibraryManagerDataSet_Users1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
