@@ -90,5 +90,10 @@ namespace LibraryClient
         {
             radioBtn_User.Select();
         }
+
+        private void textBox_Psw_TextChanged(object sender, EventArgs e)
+        {
+            textBox_Psw.PasswordChar = '*';
+        }
     }
 }

@@ -71,15 +71,20 @@
     <Compile Include="Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
     </Compile>
-    <Compile Include="LibraryManagerDataSet_Admins2.Designer.cs">
+    <Compile Include="LibraryManagerDataSet_Admins.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LibraryManagerDataSet_Admins2.xsd</DependentUpon>
+      <DependentUpon>LibraryManagerDataSet_Admins.xsd</DependentUpon>
     </Compile>
-    <Compile Include="LibraryManagerDataSet_Users1.Designer.cs">
+    <Compile Include="LibraryManagerDataSet_Books.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LibraryManagerDataSet_Users1.xsd</DependentUpon>
+      <DependentUpon>LibraryManagerDataSet_Books.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryManagerDataSet_Users.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagerDataSet_Users.xsd</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -149,27 +154,38 @@
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="LibraryManagerDataSet_Admins2.xsc">
-      <DependentUpon>LibraryManagerDataSet_Admins2.xsd</DependentUpon>
+    <None Include="LibraryManagerDataSet_Admins.xsc">
+      <DependentUpon>LibraryManagerDataSet_Admins.xsd</DependentUpon>
     </None>
-    <None Include="LibraryManagerDataSet_Admins2.xsd">
+    <None Include="LibraryManagerDataSet_Admins.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LibraryManagerDataSet_Admins2.Designer.cs</LastGenOutput>
+      <LastGenOutput>LibraryManagerDataSet_Admins.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="LibraryManagerDataSet_Admins2.xss">
-      <DependentUpon>LibraryManagerDataSet_Admins2.xsd</DependentUpon>
+    <None Include="LibraryManagerDataSet_Admins.xss">
+      <DependentUpon>LibraryManagerDataSet_Admins.xsd</DependentUpon>
     </None>
-    <None Include="LibraryManagerDataSet_Users1.xsc">
-      <DependentUpon>LibraryManagerDataSet_Users1.xsd</DependentUpon>
+    <None Include="LibraryManagerDataSet_Books.xsc">
+      <DependentUpon>LibraryManagerDataSet_Books.xsd</DependentUpon>
     </None>
-    <None Include="LibraryManagerDataSet_Users1.xsd">
+    <None Include="LibraryManagerDataSet_Books.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LibraryManagerDataSet_Users1.Designer.cs</LastGenOutput>
+      <LastGenOutput>LibraryManagerDataSet_Books.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="LibraryManagerDataSet_Users1.xss">
-      <DependentUpon>LibraryManagerDataSet_Users1.xsd</DependentUpon>
+    <None Include="LibraryManagerDataSet_Books.xss">
+      <DependentUpon>LibraryManagerDataSet_Books.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryManagerDataSet_Users.xsc">
+      <DependentUpon>LibraryManagerDataSet_Users.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryManagerDataSet_Users.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryManagerDataSet_Users.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryManagerDataSet_Users.xss">
+      <DependentUpon>LibraryManagerDataSet_Users.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

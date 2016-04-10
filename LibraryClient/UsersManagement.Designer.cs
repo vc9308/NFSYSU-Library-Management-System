@@ -46,9 +46,9 @@
             this.textBox_AddFullName = new System.Windows.Forms.TextBox();
             this.label_FullName = new System.Windows.Forms.Label();
             this.textBox_AddPsw = new System.Windows.Forms.TextBox();
-            this.textBox_AddUserName = new System.Windows.Forms.TextBox();
+            this.textBox_AddUserId = new System.Windows.Forms.TextBox();
             this.label_AddPsw = new System.Windows.Forms.Label();
-            this.label_AddUserName = new System.Windows.Forms.Label();
+            this.label_AddUserId = new System.Windows.Forms.Label();
             this.dataGridView_Admins = new System.Windows.Forms.DataGridView();
             this.adminIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adminPswDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -134,6 +134,7 @@
             this.button_U2A.TabIndex = 2;
             this.button_U2A.Text = "转换";
             this.button_U2A.UseVisualStyleBackColor = true;
+            this.button_U2A.Click += new System.EventHandler(this.button_U2A_Click);
             // 
             // label2
             // 
@@ -197,9 +198,9 @@
             this.groupBox_AddUser.Controls.Add(this.textBox_AddFullName);
             this.groupBox_AddUser.Controls.Add(this.label_FullName);
             this.groupBox_AddUser.Controls.Add(this.textBox_AddPsw);
-            this.groupBox_AddUser.Controls.Add(this.textBox_AddUserName);
+            this.groupBox_AddUser.Controls.Add(this.textBox_AddUserId);
             this.groupBox_AddUser.Controls.Add(this.label_AddPsw);
-            this.groupBox_AddUser.Controls.Add(this.label_AddUserName);
+            this.groupBox_AddUser.Controls.Add(this.label_AddUserId);
             this.groupBox_AddUser.Location = new System.Drawing.Point(184, 12);
             this.groupBox_AddUser.Name = "groupBox_AddUser";
             this.groupBox_AddUser.Size = new System.Drawing.Size(386, 150);
@@ -240,12 +241,12 @@
             this.textBox_AddPsw.Size = new System.Drawing.Size(112, 20);
             this.textBox_AddPsw.TabIndex = 3;
             // 
-            // textBox_AddUserName
+            // textBox_AddUserId
             // 
-            this.textBox_AddUserName.Location = new System.Drawing.Point(75, 27);
-            this.textBox_AddUserName.Name = "textBox_AddUserName";
-            this.textBox_AddUserName.Size = new System.Drawing.Size(112, 20);
-            this.textBox_AddUserName.TabIndex = 2;
+            this.textBox_AddUserId.Location = new System.Drawing.Point(75, 27);
+            this.textBox_AddUserId.Name = "textBox_AddUserId";
+            this.textBox_AddUserId.Size = new System.Drawing.Size(112, 20);
+            this.textBox_AddUserId.TabIndex = 2;
             // 
             // label_AddPsw
             // 
@@ -256,14 +257,14 @@
             this.label_AddPsw.TabIndex = 1;
             this.label_AddPsw.Text = "密码";
             // 
-            // label_AddUserName
+            // label_AddUserId
             // 
-            this.label_AddUserName.AutoSize = true;
-            this.label_AddUserName.Location = new System.Drawing.Point(26, 31);
-            this.label_AddUserName.Name = "label_AddUserName";
-            this.label_AddUserName.Size = new System.Drawing.Size(43, 13);
-            this.label_AddUserName.TabIndex = 0;
-            this.label_AddUserName.Text = "用户名";
+            this.label_AddUserId.AutoSize = true;
+            this.label_AddUserId.Location = new System.Drawing.Point(26, 31);
+            this.label_AddUserId.Name = "label_AddUserId";
+            this.label_AddUserId.Size = new System.Drawing.Size(43, 13);
+            this.label_AddUserId.TabIndex = 0;
+            this.label_AddUserId.Text = "用户名";
             // 
             // dataGridView_Admins
             // 
@@ -419,9 +420,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn userPswDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.TextBox textBox_AddPsw;
-        private System.Windows.Forms.TextBox textBox_AddUserName;
+        private System.Windows.Forms.TextBox textBox_AddUserId;
         private System.Windows.Forms.Label label_AddPsw;
-        private System.Windows.Forms.Label label_AddUserName;
+        private System.Windows.Forms.Label label_AddUserId;
         private System.Windows.Forms.Label label_FullName;
         private System.Windows.Forms.TextBox textBox_AddFullName;
         private System.Windows.Forms.Button btn_Add;

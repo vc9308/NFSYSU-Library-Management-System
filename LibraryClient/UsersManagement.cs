@@ -20,7 +20,9 @@ namespace LibraryClient
 
         private void button_A2U_Click(object sender, EventArgs e)
         {
-            
+            string id = textBox_AdminId.Text;
+            User2Admin u2a = new User2Admin(id);
+            textBox_AdminId.Text = "";
         }
 
         private void UsersManagement_Load(object sender, EventArgs e)
@@ -40,10 +42,42 @@ namespace LibraryClient
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
+            string userId = textBox_AddUserId.Text;
+            string psw = textBox_AddPsw.Text;
+            string fName = textBox_AddFullName.Text;
 
-            textBox_AddFullName.Text = string.Empty;
-            textBox_AddUserName.Text = string.Empty;
-            textBox_AddPsw.Text = string.Empty;
+            if (userId == "" || psw == "" || fName == "")
+            {
+                string warning1 = "", warning2 = "", warning3 = "";
+                if (userId == "")
+                {
+                    warning1 = "用户名 ";
+                }
+                if (psw == "")
+                {
+                    warning2 = "密码 ";
+                }
+                if (fName == "")
+                {
+                    warning3 = "姓名 ";
+                }
+                string warning = string.Format("请输入{0}{1}{2}", warning1, warning2, warning3);
+                MessageBox.Show(warning);
+            }
+            else
+            {
+                UsersDAL.Create(userId, psw, fName);
+                textBox_AddFullName.Text = string.Empty;
+                textBox_AddUserId.Text = string.Empty;
+                textBox_AddPsw.Text = string.Empty;
+            }
+        }
+
+        private void button_U2A_Click(object sender, EventArgs e)
+        {
+            string id = textBox_UserId.Text;
+            User2Admin u2a = new User2Admin(id);
+            textBox_UserId.Text = "";
         }
     }
 }

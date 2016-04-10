@@ -76,6 +76,7 @@
             this.textBox_Psw.Name = "textBox_Psw";
             this.textBox_Psw.Size = new System.Drawing.Size(162, 26);
             this.textBox_Psw.TabIndex = 3;
+            this.textBox_Psw.TextChanged += new System.EventHandler(this.textBox_Psw_TextChanged);
             // 
             // btn_OK
             // 

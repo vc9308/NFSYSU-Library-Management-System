@@ -60,5 +60,55 @@ namespace LibraryDAL
                 MessageBox.Show(ex.Message);
             }
         }
+
+        public static void Create(string id, string psw, string fName)
+        {
+            string strSQL = "Select * from Users where UserId = @UserId";
+            using (SqlCommand cmd = new SqlCommand(strSQL, Connection.cn))
+            {
+                SqlParameter param = new SqlParameter();
+                param.ParameterName = "@UserId";
+                param.SqlDbType = SqlDbType.NChar;
+                param.Size = 7;
+                param.Value = id;
+                cmd.Parameters.Add(param);
+                SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.HasRows)
+            {
+                MessageBox.Show("用户名已存在，请换另一个用户名");
+
+            }
+            else
+            {
+
+            }
+                strSQL = "insert into Users values (@UserId, @UserPassword, @FullName)";
+                using (SqlCommand cmdDel = new SqlCommand(strSQL, Connection.cn))
+                {
+                    param = new SqlParameter();
+                    param.ParameterName = "@UserId";
+                    param.SqlDbType = SqlDbType.NChar;
+                    param.Size = 7;
+                    param.Value = id;
+                    cmd.Parameters.Add(param);
+
+                    param = new SqlParameter();
+                    param.ParameterName = "@UserPassword";
+                    param.SqlDbType = SqlDbType.VarChar;
+                    param.Size = 50;
+                    param.Value = psw;
+                    cmd.Parameters.Add(param);
+
+                    param = new SqlParameter();
+                    param.ParameterName = "@FullName";
+                    param.SqlDbType = SqlDbType.VarChar;
+                    param.Size = 50;
+                    param.Value = fName;
+                    cmd.Parameters.Add(param);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
